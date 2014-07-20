@@ -6,6 +6,6 @@
     "dependencies": 
     {
         "formidable": "1.0.15",
-        "express": "latest"
+        "express": "3.x"
     }
 }
