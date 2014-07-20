@@ -1,11 +1,12 @@
 {
-    "name": "node-test",
-    "description": "node test app",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": 
-    {
-        "formidable": "1.0.15",
-        "express": "3.x"
-    }
+  "name": "node-test",
+  "description": "node test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "formidable": "1.0.15",
+    "logfmt": "^1.1.2"
+  },
+  "scripts": {"start": "node index.js"}
 }
