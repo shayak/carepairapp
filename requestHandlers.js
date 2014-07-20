@@ -30,13 +30,13 @@ function uploadFile(response, request)
         function(error, fields, files)
         {
             console.log("parsing done");
-            fs.rename(files.upload.path, "tmp/test.png", 
+            fs.rename(files.upload.path, "./tmp/test.png", 
                 function(error)
                 {
                     if (error)
                     {
-                        fs.unlink("tmp/test.png");
-                        fs.rename(files.upload.path, "tmp/test.png");
+                        fs.unlink("./tmp/test.png");
+                        fs.rename(files.upload.path, "./tmp/test.png");
                     }
                 });
             response.writeHead(200, {"Content-Type": "text/html"});

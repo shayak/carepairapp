@@ -27,7 +27,7 @@ var serverError = function(code, response, content)
 var renderImage = function(response)
 {
     response.writeHead(200, {'Content-Type': 'image/png'});
-    fs.createReadStream('tmp/test.png').pipe(response);
+    fs.createReadStream('./tmp/test.png').pipe(response);
 }
 
 exports.renderHtml = renderHtml;
